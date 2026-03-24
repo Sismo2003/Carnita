@@ -1,0 +1,21 @@
+{
+  "name": "carnita",
+  "version": "1.0.0",
+  "description": "Automated Reddit-to-TikTok content pipeline",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "cron": "node crons/pipeline.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
